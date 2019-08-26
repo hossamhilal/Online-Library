@@ -1,0 +1,1396 @@
+/*==========================||---------------------------||========================*/
+/*==========================|| DESIGNED BY  HOSSAM HILAL ||========================*/
+/*==========================||---------------------------||========================*/
+
+:root {
+    --mainColor: #348498;
+    --darkColor: #004D61;
+    --white: #fff;
+    --orange: #FF502F;
+    --text: #4A4A4A;
+    --textLight: #9B9B9B;
+    --grey: #D8D8D8;
+    --lightGrey: #F3F3F3;
+    --darkGrey: #BEBEBE;
+    --black: #000000;
+    --blue: #4173C3;
+    --green : #09B000;
+    --red : #F34A44;
+    --bgOpacity: rgba(155, 155, 155, 0.63);
+}
+
+
+
+
+@font-face {
+    font-family: 'Droid-Kufi-bold';
+    src: url('../fonts/DroidArabicKufi-Bold.eot');
+    src: url('../fonts/DroidArabicKufi-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidArabicKufi-Bold.woff2') format('woff2'),
+        url('../fonts/DroidArabicKufi-Bold.woff') format('woff'),
+        url('../fonts/DroidArabicKufi-Bold.ttf') format('truetype'),
+        url('../fonts/DroidArabicKufi-Bold.svg#DroidArabicKufi-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid-Kufi-Regular';
+    src: url('../fonts/DroidArabicKufi.eot');
+    src: url('../fonts/DroidArabicKufi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidArabicKufi.woff2') format('woff2'),
+        url('../fonts/DroidArabicKufi.woff') format('woff'),
+        url('../fonts/DroidArabicKufi.ttf') format('truetype'),
+        url('../fonts/DroidArabicKufi.svg#DroidArabicKufi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GeezaPro';
+    src: url('../fonts/GeezaPro.eot');
+    src: url('../fonts/GeezaPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GeezaPro.woff2') format('woff2'),
+        url('../fonts/GeezaPro.woff') format('woff'),
+        url('../fonts/GeezaPro.ttf') format('truetype'),
+        url('../fonts/GeezaPro.svg#GeezaPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeezaBold';
+    src: url('../GeezaPro-Bold.eot');
+    src: url('../GeezaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../GeezaPro-Bold.woff2') format('woff2'),
+        url('../GeezaPro-Bold.woff') format('woff'),
+        url('../GeezaPro-Bold.ttf') format('truetype'),
+        url('../GeezaPro-Bold.svg#GeezaPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+body {
+    font-family: 'Droid-Kufi-Regular', arial;
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: left;
+}
+
+
+p {
+    color: var(--text);
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+* {
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+
+input:active,
+input:focus,
+select:active,
+select:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.orangeBtn {
+    padding: 8px 20px;
+    background: var(--orange);
+    border-radius: 15px;
+    color: var(--white);
+    border: 1px solid var(--orange);
+}
+
+.orangeBtn:hover {
+    opacity: .9;
+    color: var(--white);
+}
+
+
+.whiteBtn {
+    padding: 8px 20px;
+    background: var(--white);
+    border-radius: 15px;
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.whiteBtn:hover {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.blueBtn {
+    padding: 8px 20px;
+    background: var(--white);
+    border-radius: 15px;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+}
+
+.blueBtn:hover {
+    background: var(--mainColor);
+    color: var(--white);
+}
+
+
+.orangeBtn:focus,
+.whiteBtn:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.topBar {
+    height: 25px;
+    line-height: 25px;
+    background: var(--darkColor);
+    color: var(--white);
+}
+
+.topBar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateBox {
+    font-size: 13px;
+}
+
+.langBox {
+    font-size: 14px;
+    display: flex;
+    line-height: 25px;
+}
+
+.langBox ul {
+    padding: 0;
+    height: 25px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 0;
+    vertical-align: top;
+    position: relative;
+    z-index: 2;
+}
+
+.langBox ul:hover {
+    height: 50px;
+}
+
+.langBox li {
+    background: var(--darkColor);
+    padding: 0 15px;
+}
+
+.langBox li:first-of-type {
+    padding-left: 0;
+}
+
+.langBox a {
+    color: var(--white);
+    font-family: arial;
+}
+
+.langBox i {
+    line-height: 25px;
+}
+
+.SiteNavBar {
+    background: var(--mainColor);
+    padding: 14px 0;
+}
+
+.SiteNavBar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SiteNavBar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.SiteNavBar .siteName {
+    padding-right: 12px;
+    color: var(--white);
+    text-align: right;
+}
+
+.SiteNavBar .siteName h2 {
+    font-size: 23px;
+}
+
+.SiteNavBar .siteName h5 {
+    font-size: 17px;
+    font-family: 'GeezaBold';
+    font-weight: bold;
+    margin: 0;
+}
+
+.SiteNavBar .navMenu {
+    display: flex;
+    align-items: center;
+}
+
+.SiteNavBar .navMenu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.SiteNavBar .navMenu li {
+    margin-left: 50px;
+    padding: 0;
+    position: relative;
+}
+
+.SiteNavBar .navMenu a {
+    color: var(--white);
+    font-size: 22px;
+}
+
+.SiteNavBar .navMenu a::after {
+    content: "";
+    height: 10px;
+    width: 0%;
+    background: var(--white);
+    position: absolute;
+    bottom: -26px;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
+
+.SiteNavBar .navMenu a:hover::after,
+.SiteNavBar .navMenu .active::after {
+    width: 100%;
+}
+
+.SiteNavBar .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.SiteNavBar .buttons .searchBtn {
+    margin-left: 30px;
+    width: 40px;
+}
+
+.SiteNavBar .buttons .loginBtn {
+    padding: 8px 20px;
+    background: var(--orange);
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.SiteNavBar .buttons .loginBtn i {
+    display: none;
+}
+
+.SiteNavBar .buttons .menuBtn {
+    width: 40px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    margin-right: 30px;
+    display: none;
+}
+
+.SiteNavBar .buttons .menuBtn span {
+    background: var(--white);
+    height: 3px;
+    display: block;
+    width: 100%;
+}
+
+.SiteNavBar .buttons .menuBtn span:last-of-type {
+    width: 60%;
+}
+
+.SiteNavBar .buttons .menuBtn span:nth-child(2) {
+    width: 80%;
+}
+
+.SiteNavBar .buttons .menuBtn:hover span {
+    width: 100%;
+}
+
+
+.homeHeader {
+    background: url(../images/header-bg.png);
+    background-size: cover;
+    background-size: 100% 100%;
+    padding: 200px 0;
+}
+
+.homeHeader .headerSearch {
+    padding: 60px 0;
+    background: var(--bgOpacity);
+}
+
+.homeHeader .searchBox {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    margin: auto;
+}
+
+.searchBox .customSelect {
+    height: 70px;
+    color: var(--text);
+    background: var(--grey);
+    font-size: 18px;
+    line-height: 70px;
+    padding: 0 20px 0 50px;
+    border-color: var(--grey);
+    border-radius: 0 8px 8px 0;
+}
+
+.searchBox .customSelect:after {
+    border-bottom: 2px solid var(--text);
+    border-right: 2px solid var(--text);
+    height: 11px;
+    width: 11px;
+    right: auto;
+    left: 20px;
+}
+
+.homeHeader .searchBox input {
+    font-size: 20px;
+    padding: 0 20px;
+    border-radius: 0;
+}
+
+.homeHeader .searchBox input::placeholder {
+    color: var(--grey);
+}
+
+.homeHeader .searchBox input:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.homeHeader .searchBox .searchBtn {
+    background: var(--orange);
+    border: 1px solid var(--orange);
+    padding: 0 25px;
+    border-radius: 8px 0 0 8px;
+}
+
+.homeHeader .searchBox .searchBtn img {
+    width: 50px;
+}
+
+.homeHeader .searchBox .searchBtn:hover,
+.homeHeader .searchBox .searchBtn:focus,
+.homeHeader .searchBox .searchBtn:active {
+    box-shadow: none;
+    outline: 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.customSelect .list {
+    z-index: 9;
+    width: 290px;
+    right: 0;
+    left: auto;
+}
+
+.customSelect .option {
+    text-align: right;
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--grey);
+}
+
+
+.homeBooks {
+    padding: 100px 0px;
+}
+
+@media (min-width:1200px) {
+    .homeBooks {
+        padding: 100px 70px;
+    }
+}
+
+.main-title {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Droid-Kufi-bold';
+    margin-bottom: 40px;
+    color: var(--darkColor);
+}
+
+.TabsList {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.TabsList a {
+    font-size: 30px;
+    color: var(--text);
+    border-bottom: 5px solid var(--white);
+    display: inline-block;
+    margin-left: 70px;
+    padding: 15px 0;
+}
+
+.TabsList a:last-of-type {
+    margin-left: 0;
+}
+
+.TabsList .activeTab {
+    border-bottom-color: var(--text);
+}
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.activeContent {
+    display: block;
+}
+
+.bookBox {
+    border: 1px solid var(--grey);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.bookBox .data {
+    padding: 20px;
+    text-align: right;
+}
+
+.bookBox h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bookBox p {
+    font-size: 18px;
+    color: var(--text);
+}
+
+.bookBox .bookFooter {
+    padding: 30px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookBox .bookFooter a {
+    display: inline-block;
+}
+
+.bookBox .bookFooter a:first-of-type {
+    margin-left: 20px;
+}
+
+.showMoreBox {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.showMoreBox .whiteBtn {
+    padding: 10px 40px;
+}
+
+
+.homeCats {
+    padding: 100px 0px;
+    background: var(--darkColor);
+}
+
+@media (min-width:1200px) {
+    .homeCats {
+        padding: 100px 70px;
+    }
+
+    .homeCats .col-12 {
+        padding: 0 35px;
+    }
+}
+
+.homeCats .main-title {
+    color: var(--white);
+    font-family: 'Droid-Kufi-Regular';
+}
+
+.catBox {
+    background: var(--white);
+    display: flex;
+    margin-bottom: 72px;
+    padding: 35px;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+}
+
+.catBox h2 {
+    font-size: 40px;
+}
+
+.homeCats .blueBtn {
+    padding: 10px 40px;
+}
+
+
+.homeAds {
+    padding: 100px 0px 50px;
+    background: var(--grey);
+}
+
+@media (min-width:1200px) {
+    .homeAds {
+        padding: 100px 70px 50px;
+    }
+}
+
+
+.bookAd {
+    border: 1px solid var(--darkGrey);
+    text-align: right;
+    position: relative;
+}
+
+.bookAd .bookHeader {
+    background: var(--white);
+    padding: 20px 40px;
+}
+
+.bookAd .bookHeader h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.bookAd .bookHeader p {
+    font-size: 17px;
+    color: var(--textLight);
+}
+
+.bookAd img {
+    max-height: 520px;
+}
+
+.bookAd .bookFooter {
+    position: absolute;
+    bottom: 0;
+    background: var(--bgOpacity);
+    padding: 20px;
+}
+
+.bookAd .bookFooter h3 {
+    font-size: 20px;
+    margin: 0;
+    line-height: 36px;
+}
+
+.adsOwl .owl-dots {
+    display: flex;
+    padding: 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.adsOwl .owl-dot {
+    width: 19px;
+    height: 16px;
+    background: var(--black);
+    border-radius: 50%;
+    margin: 7px;
+}
+
+.adsOwl .owl-dot.active {
+    background: transparent;
+    border: 2px solid var(--black);
+}
+
+.bookAd .showMoreBox {
+    margin-top: 15px;
+}
+
+.footer {
+    padding: 30px 30px 10px;
+}
+
+.footerBox {
+    background: var(--lightGrey);
+    text-align: right;
+    padding: 30px;
+    height: 100%;
+}
+
+@media (min-width:1200px) {
+    .footerBox .col-12 {
+        padding: 0 30px;
+    }
+}
+
+.footerBox h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.footerBox i {
+    font-size: 75px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footerBox h5 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.footerBox textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    height: 132px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.footerBox .orangeBtn {
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.footerBox a {
+    display: block;
+    font-size: 17px;
+    text-decoration: underline !important;
+    margin-bottom: 10px;
+    color: var(--blue);
+}
+
+.copRight {
+    background: var(--darkColor);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.copRight p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.loginWrapper {
+    padding: 100px 0;
+}
+
+.loginForm {
+    width: 100%;
+    max-width: 624px;
+    margin: auto;
+    border: 1px solid var(--grey);
+    padding: 30px;
+    text-align: right;
+}
+
+.loginForm h2 {
+    font-size: 36px;
+    font-family: 'Droid-Kufi-bold';
+    color: var(--mainColor);
+    margin-bottom: 30px;
+}
+
+.inputField {
+    margin-bottom: 20px;
+}
+
+.inputField label {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.inputField input {
+    height: 55px;
+    line-height: 50px;
+    font-size: 20px;
+    color: var(--black);
+    border-radius: 8px;
+}
+
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexBox a {
+    font-size: 20px;
+    position: relative;
+    color: var(--mainColor);
+    height: 25px;
+    line-height: 25px;
+}
+
+.flexBox a::after {
+    content: "";
+    background: var(--mainColor);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    right: 0;
+}
+
+.flexBox .orangeBtn {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.socialLogin {
+    padding: 30px 0;
+}
+
+.socialLogin h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.socialLogin a {
+    margin-left: 35px;
+    width: 47px;
+    height: 45px;
+    display: inline-block;
+}
+
+
+
+.socialLogin img {
+    width: 100%;
+    height: 100%;
+}
+
+.loginFormFooter {
+    padding: 20px 0 0 0;
+    position: relative;
+    margin-bottom: -10px;
+}
+
+.loginFormFooter::before {
+    content: "";
+    width: calc(100% + 60px);
+    background: var(--grey);
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+.loginFormFooter span {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.loginFormFooter a {
+    font-size: 20px;
+    position: relative;
+}
+
+.loginFormFooter a::after {
+    content: "";
+    background: var(--mainColor);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+    left: 0;
+}
+
+
+.breadCrumbWrapper {
+    padding: 20px 0;
+}
+
+.breadcrumb {
+    background: transparent;
+    font-size: 15px;
+}
+
+.breadcrumb a {
+    color: var(--black);
+    text-decoration: underline !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+}
+
+.breadcrumb-item.active {
+    color: var(--black);
+}
+
+.bookPage {
+    text-align: right;
+    padding: 40px 0;
+}
+
+.bookPage .row {
+    justify-content: center;
+}
+
+.bookPageImage {
+    margin-bottom: 30px;
+}
+
+.bookPageImage img {
+    max-height: 420px;
+}
+
+.bookPageInfo {
+    margin-bottom: 30px;
+}
+
+
+.bookPageInfo h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.bookPageInfo h3 {
+    font-size: 22px;
+    color: var(--darkGrey);
+}
+
+.bookPageInfo .cats {
+    padding: 20px 0;
+}
+
+.bookPageInfo .cats label {
+    font-size: 22px;
+    display: block;
+    color: var(--text);
+}
+
+.bookPageInfo .cats a {
+    background: var(--darkGrey);
+    padding: 9px 15px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 13px;
+    color: var(--white);
+}
+
+.bookSummary h5 {
+    font-size: 22px;
+    font-family: 'Droid-Kufi-bold';
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.bookSummary p {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+
+
+.bookRate {
+    border: 1px solid var(--grey);
+    padding: 30px;
+}
+
+.bookRate h2 {
+    font-size: 22px;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+.bookRate .rateInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bookRate .rateList {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    font-size: 30px;
+}
+
+.bookRate .rateList li {
+    margin-left: 10px;
+}
+
+.bookRate .rateInfo a {
+    font-size: 20px;
+    color: var(--mainColor);
+    text-decoration: underline !important;
+}
+
+.bookRate .rateInfo i {
+    font-size: 30px;
+}
+
+.bookRate button {
+    display: block;
+    border: 1px solid var(--darkColor);
+    width: 100%;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.bookRate .rateBtn {
+    background: var(--darkColor);
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+.bookRate .shareBtn {
+    color: var(--darkColor);
+    background: transparent;
+}
+
+.bookRate button:focus , .bookRate button:active {
+    box-shadow: none;
+    outline: 0;
+}
+
+.bookRate .rateBtn:hover {
+    opacity: .8;
+}
+
+.bookRate .shareBtn:hover {
+    background: var(--darkColor);
+    color: var(--white);
+}
+
+.bookVersionsWrapper {
+    border: 1px solid var(--grey);
+    border-width: 1px 0;
+    padding: 40px 0px;
+    text-align: right;
+}
+
+
+.bookVersionsWrapper h2 {
+    font-family: 'Droid-Kufi-bold';
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: var(--text);
+}
+
+@media (min-width:1024px) {
+    .bookVersionsWrapper {
+        padding: 40px 60px;
+    }
+
+    .bookVersionOwl .owl-nav.disabled {
+        display: flex !important;
+    }
+}
+
+.bookVersion {
+    border: 1px solid var(--grey);
+    padding: 20px;
+}
+
+.bookVersion h4 {
+    color: var(--text);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bookVersion label {
+    color: var(--darkGrey);
+    font-size: 18px;
+}
+
+.bookVersion H5 {
+    color: var(--black);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.bookVersion H5.available {
+    color: var(--green);
+}
+
+.bookVersion H5.unavailable {
+    color: var(--red);
+}
+
+.bookVersion .orangeBtn {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.bookVersionOwl .owl-prev {
+    right: -60px;
+}
+
+.bookVersionOwl .owl-next {
+    left: -60px;
+}
+
+.bookVersionOwl .owl-prev, .bookVersionOwl .owl-next {
+    position: absolute;
+    top: calc( 50% - 45px );
+    font-size: 60px;
+}
+
+.bookVersionOwl {
+    position: relative;
+}
+
+.bookMoreInfo {
+    padding: 40px;
+    text-align: right;
+    color: var(--text);
+}
+
+.bookMoreInfo h2 {
+    font-size: 30px;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+.bookMoreInfo ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+.bookMoreInfo label {
+    margin-bottom: 10px;
+}
+
+.bookMoreInfo li {
+    margin-bottom: 10px;
+}
+
+.bookCommentsWrapper {
+    padding: 40px 0;
+    text-align: right;
+    border-top: 1px solid var(--grey);
+}
+
+@media (min-width:1024px) {
+    .bookCommentsWrapper {
+        padding: 40px 60px;
+    }
+}
+
+.bookCommentsWrapper h2 {
+    font-size: 30px;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+
+.addCommentBox {
+    margin-bottom: 60px;
+}
+
+
+.addCommentBox form {
+    display: flex;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media screen and(max-width:575px) {
+    .addCommentBox form {
+        flex-direction:column;
+    }
+    .addCommentBox input {
+        border: 1px solid var(--grey);
+        margin-bottom:30px;
+    }
+}
+
+.addCommentBox .orangeBtn {
+    width: 190px;
+}
+
+.addCommentBox input {
+    height: 60px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.commentsHeader {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 20px;
+}
+
+.commentsHeader .total {
+    font-size: 23px;
+    color: var(--text);
+}
+
+.commentsHeader .viewAll {
+    font-size: 20px;
+    color: var(--mainColor);
+    text-decoration: underline !important;
+}
+
+.comment {
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid var(--grey);
+}
+
+.comment img {
+    width: 65px;
+    height: 65px;
+    display: block;
+}
+
+.comment .more {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment .data {
+    width: calc( 100% - 105px );
+    padding: 0 20px;
+}
+
+.comment p {
+    word-break: break-all;
+}
+
+.comment h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.comment .more span {
+    width: 12px;
+    height: 12px;
+    background: var(--grey);
+    display: block;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.menuShow {
+    transform: translateX(0%) !important;
+}
+
+@media screen and (max-width:1024px){
+    .navMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        z-index: 10;
+        background: var(--white);
+        transform: translateX(-100%);
+        transition: all .5s ease-in-out;
+    }
+
+    .SiteNavBar .navMenu {
+        align-items: flex-start;
+        padding: 50px 0;
+    }
+    
+    .SiteNavBar .navMenu a {
+        color: var(--text);
+    }
+    
+    .SiteNavBar .navMenu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .SiteNavBar .navMenu li {
+        margin: 0;
+        padding: 15px 20px;
+        text-align: right;
+    }
+    
+    .SiteNavBar .buttons .loginBtn span {
+        display: none;
+    }
+    
+    .SiteNavBar .buttons .loginBtn i {
+        display: block;
+    }
+    
+    .SiteNavBar .container-fluid {
+        flex-direction: column;
+    }
+    
+    .SiteNavBar .logo {
+        margin-bottom: 20px;
+    }
+    
+    .SiteNavBar .buttons {
+        justify-content: flex-end;
+    }
+    
+    .SiteNavBar .buttons .menuBtn {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .bookRate .rateInfo {
+        flex-direction: column;
+    }
+    
+    .bookMoreInfo {
+        padding: 40px 0;
+    }
+    
+    .bookMoreInfo ul {
+        padding: 0;
+    }
+    
+    .addCommentBox form {
+        flex-direction: column;
+        border: 0;
+    }
+    
+    .addCommentBox input {
+        border: 1px solid var(--grey);
+        margin-bottom: 20px;
+    }
+    
+    .commentsHeader {
+        flex-direction: column;
+    }
+    
+    .commentsHeader .total {
+        margin-bottom: 15px;
+    }
+    
+    .comment {
+        padding: 20px 0;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .comment img {
+        margin-bottom: 20px;
+    }
+    
+    .comment .data {
+        width: 100%;
+    }
+    
+    .comment .more {
+        position: absolute;
+        left: 0;
+        top: 21px;
+    }
+
+    .homeHeader .searchBox {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .homeHeader .searchBox input {
+        height: 60px;
+        margin: 10px 0;
+    }
+    
+    .searchBox .customSelect , .homeHeader .searchBox .searchBtn {
+        border-radius: 0;
+    }
+    
+    .homeHeader .searchBox .searchBtn {
+        padding: 7px 20px;
+    }
+    
+    .TabsList a {
+        font-size: 20px;
+    }
+    
+    .bookBox .bookFooter a {
+        display: block;
+        text-align: center;
+    }
+    
+    .bookBox .bookFooter a:first-of-type {
+        margin: 0 0 20px 0;
+    }
+    
+    .bookBox .bookFooter {
+        flex-direction: column;
+    }
+    
+    .catBox img {
+        width: 42px;
+    }
+    
+    .catBox h2 {
+        font-size: 28px;
+    }
+    
+    .main-title {
+        font-size: 30px;
+    }
+    
+    .bookAd .bookFooter h3 {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .bookAd img {
+        height: 300px;
+    }
+    
+    .bookAd .bookHeader h2 {
+        font-size: 20px;
+    }
+    
+    .bookAd .bookHeader p {
+        font-size: 13px;
+    }
+    
+    .footer {
+        padding: 30px 0;
+    }
+    
+    .footerBox {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}

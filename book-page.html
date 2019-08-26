@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/niceSelect/css/nice-select.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <title> Online Library </title>
+</head>
+
+<body>
+
+
+    <!-- TOP BAR  -->
+    <div class="topBar">
+        <div class="container-fluid">
+            <div class="dateBox"> </div>
+            <div class="langBox">
+                <i class="icofont-globe"></i>
+                <ul>
+                    <li> <a href="#"> English </a></li>
+                    <li> <a href="#"> Arabic </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- SITE NAVBAR  -->
+    <div class="SiteNavBar">
+        <div class="container-fluid">
+            <a class="logo" href="index.html">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+                <div class="siteName">
+                    <h2> المكتبة الإلكترونية </h2>
+                    <h5> وزارة التعليم العالي </h5>
+                </div>
+            </a>
+            <div class="navMenu">
+                <ul>
+                    <li> <a href="#" class="active"> الرئيسية </a> </li>
+                    <li> <a href="#"> عن المكتبة </a> </li>
+                    <li> <a href="#"> فئات الكتب </a> </li>
+                    <li> <a href="#"> الأخبار </a> </li>
+                    <li> <a href="#"> الفعاليات </a> </li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <a class="searchBtn" href="#"> <img src="images/search-Icon.png" alt="icon" class="img-fluid"> </a>
+                <a class="loginBtn" href="login.html"> <i class="icofont-user-alt-7"></i> <span> تسجيل دخول </span> </a>
+                <div class="menuBtn"> <span></span> <span></span> <span></span> </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIN FORM  -->
+    <div class="breadCrumbWrapper">
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#"> الرئيسية </a></li>
+                    <li class="breadcrumb-item"><a href="#"> ثقافة عامة </a></li>
+                    <li class="breadcrumb-item"><a href="#"> الفئة العمرية 10-14 سنة </a></li>
+                    <li class="breadcrumb-item active" aria-current="page"> عنوان الكتاب </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="bookPage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4 col-xl-3">
+                    <div class="bookPageImage">
+                        <img src="images/img-3.webp" alt="book" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-8 col-xl-6">
+                    <div class="bookPageInfo">
+                        <h2> عنوان الكتاب </h2>
+                        <h3> إسم الكاتب </h3>
+                        <div class="cats">
+                            <label> الفئة </label>
+                            <a href="#"> ثقافة عامة </a>
+                        </div>
+                        <div class="bookSummary">
+                            <h5> ملخص الكتاب </h5>
+                            <p> تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص لكتاب تفاصيل ملخص
+                                الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب
+                                تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص الكتاب تفاصيل ملخص </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-4 col-xl-3">
+                    <div class="bookRate">
+                        <h2> معدل التقييم </h2>
+                        <div class="rateInfo">
+                            <ul class="rateList">
+                                <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                                <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                                <li> <i class="fa fa-star" aria-hidden="true"></i> </li>
+                                <li> <i class="fa fa-star-o" aria-hidden="true"></i> </li>
+                                <li> <i class="fa fa-star-o" aria-hidden="true"></i> </li>
+                            </ul>
+                            <a href="#"> 70 قارئ </a>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </div>
+                        <button class="rateBtn"> أضف تقيمك </button>
+                        <button class="shareBtn"> مشاركة الكتاب </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bookVersionsWrapper">
+        <div class="container-fluid">
+
+            <h2> نسخ الكتاب </h2>
+            <div class="owl-carousel owl-theme bookVersionOwl">
+                <div class="item">
+                    <div class="bookVersion">
+                        <h4> النسخة الأولى </h4>
+
+                        <label> باركود </label>
+                        <h5> 4567922246 </h5>
+
+                        <label> حالة النسخة </label>
+                        <h5 class="available"> <i class="fa fa-check-circle-o" aria-hidden="true"></i> <span> متواجدة
+                            </span> </h5>
+
+                        <label> الموقع في المكتبة </label>
+                        <h5> الطابق 1 - القسم AA </h5>
+
+                        <a href="#" class="orangeBtn"> إحجز النسخة </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bookVersion">
+                        <h4> النسخة الأولى </h4>
+
+                        <label> باركود </label>
+                        <h5> 4567922246 </h5>
+
+                        <label> حالة النسخة </label>
+                        <h5 class="available"> <i class="fa fa-check-circle-o" aria-hidden="true"></i> <span> متواجدة
+                            </span> </h5>
+
+                        <label> الموقع في المكتبة </label>
+                        <h5> الطابق 1 - القسم AA </h5>
+
+                        <a href="#" class="orangeBtn"> إحجز النسخة </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="bookVersion">
+                        <h4> النسخة الأولى </h4>
+
+                        <label> باركود </label>
+                        <h5> 4567922246 </h5>
+
+                        <label> حالة النسخة </label>
+                        <h5 class="unavailable"> <i class="fa fa-times-circle-o" aria-hidden="true"></i> <span> محجوزة
+                                حتى 2018-10-30 </span> </h5>
+
+                        <label> الموقع في المكتبة </label>
+                        <h5> الطابق 1 - القسم AA </h5>
+
+                        <a href="#" class="orangeBtn"> إحجز النسخة </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bookMoreInfo">
+        <div class="container-fluid">
+            <h2> معلومات إضافية عن الكتاب </h2>
+            <ul>
+                <li>
+                    <label> الرقم الدولي: </label>
+                    <span> xxxxxxxxxxx </span>
+                </li>
+                <li>
+                    <label> تاريخ الطابعة: </label>
+                    <span> xxxxxxxxxxx </span>
+                </li>
+                <li>
+                    <label> رقم التصنيف: </label>
+                    <span> xxxxxxxxxxx </span>
+                </li>
+                <li>
+                    <label> تاريخ الإضافة إلى المكتبة: </label>
+                    <span> xxxxxxxxxxx </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="bookCommentsWrapper">
+        <div class="container-fluid">
+            <h2> التعليقات </h2>
+
+            <div class="addCommentBox">
+                <form action="">
+                    <input type="text" class="form-control" placeholder="أضف تعليق ....">
+                    <button class="orangeBtn" type="submit"> أضف تعليق </button>
+                </form>
+            </div>
+
+            <div class="comments">
+                <div class="commentsHeader">
+                    <div class="total">  المجموع (12) </div>
+                    <a class="viewAll" href="#"> إظهار كل التعليقات </a>
+                </div>
+                <div class="commentsContent">
+                    <div class="comment">
+                        <img src="images/user.png" alt="user">
+                        <div class="data">
+                            <h3> كميل أبي خليل </h3>
+                            <p>  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX </p>
+                        </div>
+                        <div class="more">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/user.png" alt="user">
+                        <div class="data">
+                            <h3> كميل أبي خليل </h3>
+                            <p>  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX </p>
+                        </div>
+                        <div class="more">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <img src="images/user.png" alt="user">
+                        <div class="data">
+                            <h3> كميل أبي خليل </h3>
+                            <p>  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX </p>
+                        </div>
+                        <div class="more">
+                            <span> </span>
+                            <span> </span>
+                            <span> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- COPYRIGHT  -->
+    <div class="copRight">
+        <div class="container-fluid">
+            <p> Footer Area </p>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/niceSelect/js/jquery.nice-select.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+</body>
+
+</html>
