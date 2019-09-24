@@ -505,6 +505,12 @@ select:focus {
     margin-left: 20px;
 }
 
+
+.bookBox:hover {
+    box-shadow: 0px 0px 15px 0px rgba(78, 78, 78, 0.1);
+    transition: all .4s ease-in-out;
+}
+
 .showMoreBox {
     margin-top: 50px;
     text-align: center;
@@ -547,6 +553,15 @@ select:focus {
 
 .catBox h2 {
     font-size: 40px;
+}
+
+
+.catBox:hover img {
+    filter: invert(0.4) sepia(1) saturate(51) hue-rotate(360deg) brightness(1.2);
+}
+
+.catBox:hover h2 {
+    color: var(--orange);
 }
 
 .homeCats .blueBtn {
@@ -622,6 +637,11 @@ select:focus {
 .adsOwl .owl-dot.active {
     background: transparent;
     border: 2px solid var(--black);
+}
+
+.adsOwl .owl-dot:hover {
+    background: var(--orange);
+    border-color: var(--orange);
 }
 
 .bookAd .showMoreBox {
